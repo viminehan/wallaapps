@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Create A Player Character for the Walla Game!">
+  	<meta name="keywords" content="fallout, fallout2d20, walla">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Walla: Character Creator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1> Nuka-Cola Australia </h1> 
+		<h2> Independant Contractor Application Form</h2>
+		<span> Tagline </span>
+		<hr>
+		<form>
+			<!-- Name -->
+			<label for="name"> Name: </label>
+			<input type="text" id="name" name="name" value="Joe">
+			<br>
+
+			<!-- Identity -->
+			<span> Identity </span>
+			<br>
+			<input type="radio" id="id1" name="identity" value="1">
+			<label for="id1">Survivor</label> 
+			<br>
+
+			<input type="radio" id="id2" name="identity" value="2">
+			<label for="id2">Vault Dweller</label>  
+			<br>
+
+			<input type="radio" id="id3" name="identity" value="3">
+			<label for="id3">Mr. Handy</label> 
+			<br>
+
+			<input type="radio" id="id4" name="identity" value="4">
+			<label for="id4">Super Mutant</label> 
+			<br>
+
+			<input type="radio" id="id5" name="identity" value="5">
+			<label for="id5">Synth</label> 
+			<br>
+
+			<!-- Background -->
+			
+			<!-- Attribute Allocation -->
+			<span> What makes you S.P.E.C.I.A.L? </span>
+			<br>
+			<label for="str" class="special">Strength </label>
+			<input type="range" id="str" min="4" max="10" value="4"> <output id="strOut">4</output>
+			<br>
+			<label for="per" class="special">Perception </label>
+			<input type="range" id="per" min="4" max="10" value="4"> <output id="perOut">4</output>
+			<br>
+			<label for="end" class="special">Endurance </label>
+			<input type="range" id="end" min="4" max="10" value="4"> <output id="endOut">4</output>
+			<br>
+			<label for="cha" class="special">Charisma </label>
+			<input type="range" id="cha" min="4" max="10" value="4"> <output id="chaOut">4</output>
+			<br>
+			<label for="int" class="special">Inteligence </label>
+			<input type="range" id="int" min="4" max="10" value="4"> <output id="intOut">4</output>
+			<br>
+			<label for="agi" class="special">Agility </label>
+			<input type="range" id="agi" min="4" max="10" value="4"> <output id="agiOut">4</output>
+			<br>
+			<label for="lck" class="special">Luck </label>
+			<input type="range" id="lck" min="4" max="10" value="4"> <output id="lckOut">4</output>
+			<br>
+
+			<span> Points Left: </span>
+			<span id="atrmax">13</span>
+			<br>
+			<span id="atrWarn">You Have Unspent Points!</span>
+			<br>
+
+			<!-- Tag Skills -->
+			<span> Tag Skills </span>
+			<br>
+			<span> tag skill description </span>
+			<br>
+			<label for="ath" class="skills">Athletics </label>
+			<input type="checkbox" id="ath" class="tagbox">
+			<input type="range" id="athr" min="0" max="3" value="0" class="skillrange"> <output id="athrOut">0</output>
+			<br>
+			<label for="bar" class="skills">Barter </label>
+			<input type="checkbox" id="bar" class="tagbox">
+			<input type="range" id="barr" min="0" max="3" value="0"> <output id="barrOut">0</output>
+			<br>
+			<label for="bar" class="skills">Big Guns </label>
+			<input type="checkbox" id="big" class="tagbox">
+			<input type="range" id="bigr" min="0" max="3" value="0"> <output id="bigrOut">0</output>
+			<br>
+			<label for="eng" class="skills">Energy Weapons </label>
+			<input type="checkbox" id="eng" class="tagbox">
+			<input type="range" id="engr" min="0" max="3" value="0"> <output id="engrOut">0</output>
+			<br>
+			<label for="exp" class="skills">Explosives </label>
+			<input type="checkbox" id="exp">
+			<input type="range" id="expr" min="0" max="3" value="0"> <output id="exprOut">0</output>
+			<br>
+			<label for="loc" class="skills">Lockpick </label>
+			<input type="checkbox" id="loc">
+			<input type="range" id="locr" min="0" max="3" value="0"> <output id="locrOut">0</output>
+			<br>
+			<label for="med" class="skills">Medicine </label>
+			<input type="checkbox" id="med">
+			<input type="range" id="medr" min="0" max="3" value="0"> <output id="medrOut">0</output>
+			<br>
+			<label for="mel" class="skills">Melee Weapons </label>
+			<input type="checkbox" id="mel">
+			<input type="range" id="melr" min="0" max="3" value="0"> <output id="melrOut">0</output>
+			<br>
+			<label for="pil" class="skills">Pilot </label>
+			<input type="checkbox" id="pil">
+			<input type="range" id="pilr" min="0" max="3" value="0"> <output id="pilrOut">0</output>
+			<br>
+			<label for="rep" class="skills">Repair </label>
+			<input type="checkbox" id="rep">
+			<input type="range" id="repr" min="0" max="3" value="0"> <output id="reprOut">0</output>
+			<br>
+			<label for="sci" class="skills">Science </label>
+			<input type="checkbox" id="sci">
+			<input type="range" id="scir" min="0" max="3" value="0"> <output id="scirOut">0</output>
+			<br>
+			<label for="sma" class="skills">Small Guns </label>
+			<input type="checkbox" id="sma">
+			<input type="range" id="smar" min="0" max="3" value="0"> <output id="smarOut">0</output>
+			<br>
+			<label for="sne" class="skills">Sneak </label>
+			<input type="checkbox" id="sne">
+			<input type="range" id="sner" min="0" max="3" value="0"> <output id="snerOut">0</output>
+			<br>
+			<label for="spe" class="skills">Speech</label>
+			<input type="checkbox" id="spe">
+			<input type="range" id="sper" min="0" max="3" value="0"> <output id="sperOut">0</output>
+			<br>
+			<label for="sur" class="skills">Survival</label>
+			<input type="checkbox" id="sur">
+			<input type="range" id="surr" min="0" max="3" value="0"> <output id="surrOut">0</output>
+			<br>
+			<label for="thr" class="skills">Throwing </label>
+			<input type="checkbox" id="thr">
+			<input type="range" id="thrr" min="0" max="3" value="0"> <output id="thrrOut">0</output>
+			<br>
+			<label for="una" class="skills">Unarmed </label>
+			<input type="checkbox" id="una">
+			<input type="range" id="unar" min="0" max="3" value="0"> <output id="unarOut">0</output>
+			<br>
+			<span> Tag Skills:</span>
+			<span id="maxTag">3</span>
+			<br>
+			<span> Skill Points Remaining:</span>
+			<span id="skillMax">13</span>
+			<br>
+	
+		</form>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
